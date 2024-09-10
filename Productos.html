@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <script>
+        // Función para añadir el producto al carrito
+        function addToCart(nombre, precio) {
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            carrito.push({ nombre: nombre, precio: precio});
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            alert(nombre + " añadido al carrito");
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <header>
+            <h1>Productos</h1>
+        </header>
+    </center>
+    <nav>
+        <ul>
+            <li><a href="./Index.HTML">Inicio</a></li>
+            <li><a href="./Carrito.html">Carrito</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <h2>Producto 1</h2>
+    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
+    <p>Descripcion</p>
+    <p>$10.00</p>
+    <button onclick="addToCart('Producto 1', 10.00)">Añadir al carrito</button>
+
+    <h2>Producto 2</h2>
+    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
+    <p>Descripcion</p>
+    <p>$15.00</p>
+    <button onclick="addToCart('Producto 2', 15.00)">Añadir al carrito</button>
+
+    <h2>Producto 3</h2>
+    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
+    <p>Descripcion</p>
+    <p>$20.00</p>
+    <button onclick="addToCart('Producto 3', 20.00)">Añadir al carrito</button>
+
+    <h2>Producto 4</h2>
+    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
+    <p>Descripcion</p>
+    <p>$25.00</p>
+    <button onclick="addToCart('Producto 4', 25.00)">Añadir al carrito</button>
+
+    <h2>Producto 5</h2>
+    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
+    <p>Descripcion</p>
+    <p>$30.00</p>
+    <button onclick="addToCart('Producto 5', 30.00)">Añadir al carrito</button>
+    
+    <section id="Contacto">
+        <footer>
+            <p>&copy; 2024 Mi sitio Web. Todos los derechos reservados</p>
+            <p>IG</p>
+            <p>Facebook</p>
+            <p>Contacto</p>
+        </footer>
+        </section>      
+</body>
+</html>
