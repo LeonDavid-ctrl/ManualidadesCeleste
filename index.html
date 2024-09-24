@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Disponibilidad</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Producto 1</td>
+                <td>Descripcion 1</td>
+                <td>$100.00</td>
+                <td>Disponibilidad 1</td>
+                <td><img  src="./imagenes/transportation-4783286_1280.jpg" width="30px"></td>
+                <td colspan="9">
+                    <button id="agregar">Agregar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Producto 2</td>
+                <td>Descripcion 2</td>
+                <td>$200.00</td>
+                <td>Disponibilidad 2</td>
+                <td><img  src="./imagenes/machine-4839255_1280.jpg" width="30px"></td>
+                <td colspan="9">
+                    <button id="agregar">Agregar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Producto 3</td>
+                <td>Descripcion 3</td>
+                <td>$300.00</td>
+                <td>Disponibilidad 3</td>
+                <td><img  src="./imagenes/vehicle-4783285_1280.jpg" width="30px"></td>
+                <td colspan="9">
+                    <button id="agregar">Agregar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h1>Contacto </h1>
+    <form action="#" method="post" class="contacto">
+        <p>
+            <h4>Nombres</h4>
+            <input type="text" name="Mensaje" placeholder="Rogelia" required>
+        </p>
+        <p>
+            <h4>Apellidos</h4>
+            <input type="text" name="Mensaje" placeholder="Diaz Quintero" required>
+        </p>
+        <p>
+            <h4>Email</h4>
+            <input type="email" name="Correo" placeholder="Rogelia@gmail.com" required>
+        </p>
+        <p>
+            <h4>Edad</h4>
+            <input type="number" name="Edad" placeholder="00-99" required>
+        </p>
+        <p>
+            <h4>Consulta</h4>
+            <textarea name="Consulta" placeholder="Escribe aquí tu consulta..." required></textarea>
+        </p>
+        
+        <p><input type="submit" value="Mandar"></p>
+    </form>
+    
+</body>
+<footer>
+    <p>Todos los derechos reservados &copy; 2021</p>
+    <p>Contacto: <a href="mailto:rogelia@gmail.com">rogelia@gmail.com</a></p>
+    <p>Teléfono: 555-555-5555</p>
+    <iframe>
+        <h2>Mapa del sitio</h2>
+        <img src="./imagenes/Maps.jpg" width="600px">
+        <p>Dirección: Calle 123, Colonia XYZ, CP 12345</p>
+        <p>Horarios de atención: Lunes a Viernes de 9:00 a 18:00, Sábado y Domingo de 10:00 a 14:00</p>
+    </iframe>
+</footer>
+</html>
