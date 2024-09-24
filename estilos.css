@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para el encabezado */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilo para la tabla */
+.tabla {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla th {
+    background-color: #f2f2f2;
+}
+
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+.contacto {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contacto h4 {
+    margin-bottom: 5px;
+}
+
+
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.Carrito {
+    text-align: right;
+    margin-top: 20px;
+}

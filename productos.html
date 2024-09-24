@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Agregados</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<script>
+    window.onload = function() {
+        const productos = JSON.parse(localStorage.getItem('productos')) || [];
+        const tablaProductos = document.getElementById('tablaProductos').getElementsByTagName('tbody')[0];
+        let total = 0;
+
+        productos.forEach(producto => {
+            const row = tablaProductos.insertRow();
+            const cellNombre = row.insertCell(0);
+            const cellPrecio = row.insertCell(1);
+            
+            cellNombre.textContent = producto.nombre;
+            cellPrecio.textContent = `$${producto.precio.toFixed(2)}`;
+            
+            total += producto.precio;
+        });
+
+        document.getElementById('total').textContent = `Total: $${total.toFixed(2)}`;
+    }
+</script>
+
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+    <section class="tabla">
+    <h1>Productos Agregados</h1>
+    <table id="tablaProductos">
+        <thead>
+            <tr>
+                <th>Nombre del Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se agregarán los productos -->
+        </tbody>
+    </table>
+    <h2 id="total">Total: $0.00</h2>
+</section>
+<section class="contacto">
+    <h1>Contacto </h1>
+    <form action="#" method="post">
+        <p>
+            <h4>Nombres</h4>
+            <input type="text" name="Mensaje" placeholder="Rogelia" required>
+        </p>
+        <p>
+            <h4>Apellidos</h4>
+            <input type="text" name="Mensaje" placeholder="Diaz Quintero" required>
+        </p>
+        <p>
+            <h4>Email</h4>
+            <input type="email" name="Correo" placeholder="Rogelia@gmail.com" required>
+        </p>
+        <p>
+            <h4>Dirección</h4>
+            <input type="text" name="Direccion" placeholder="Carrera 42 #48-20, Medellín, Antioquia" required>
+        </p>
+        <p>
+            <h4>Télefono</h4>
+            <input type="tel" name="Telefono" placeholder="311-123-4567" required>
+        </p>
+        <p>
+            <h4>Pago</h4>
+            <label for="PagoEfectivo">Efectivo</label>
+            <input type="radio" id="PagoEfectivo" name="Pago" value="Efectivo" required>
+            <label for="PagoTarjeta">Tarjeta de Crédito</label>
+            <input type="radio" id="PagoTarjeta" name="Pago" value="Tarjeta">
+            <label for="PagoTransferencia">Transferencia Bancaria</label>
+            <input type="radio" id="PagoTransferencia" name="Pago" value="Transferencia">
+        </p>
+        
+        <p><input type="submit" value="Pagar"></p>
+    </form>
+</section>
+</body>
+<footer>
+    <p>Todos los derechos reservados &copy; 2021</p>
+    <p>Contacto: <a href="mailto:rogelia@gmail.com">rogelia@gmail.com</a></p>
+    <p>Teléfono: 555-555-5555</p>
+    <div>
+        <h2>Mapa del sitio</h2>
+        <iframe 
+            src="https://maps.app.goo.gl/4N1EFb2kGt2sdtiu8" 
+            width="300" 
+            height="250" 
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy"></iframe>
+        <p>Dirección: Carrera 42 #48-20 Edificio Cesde, Medellín, Antioquia</p>
+        <p>Horarios de atención: Lunes a Viernes de 9:00 a 18:00, Sábado y Domingo de 10:00 a 14:00</p>
+    </div>
+</footer>
+</html>

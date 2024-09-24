@@ -6,7 +6,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+<script>
+    function agregarProducto(nombre, precio) {
+        // Crear un objeto para almacenar el producto
+        const producto = {
+            nombre: nombre,
+            precio: parseFloat(precio)
+        };
+
+        // Guardar el producto en el local storage
+        let productos = JSON.parse(localStorage.getItem('productos')) || [];
+        productos.push(producto);
+        localStorage.setItem('productos', JSON.stringify(productos));
+    }
+
+    function agregarBotones() {
+        const botones = document.querySelectorAll('#agregar');
+        botones.forEach((boton, index) => {
+            boton.addEventListener('click', () => {
+                const nombreProducto = document.querySelector(`.tabla tbody tr:nth-child(${index + 1}) td:nth-child(1)`).textContent;
+                const precioProducto = document.querySelector(`.tabla tbody tr:nth-child(${index + 1}) td:nth-child(3)`).textContent.replace('$', '');
+
+                agregarProducto(nombreProducto, precioProducto);
+            });
+        });
+    }
+
+    window.onload = agregarBotones;
+</script>
+
+<section class="Carrito">
+<p>
+    <button onclick="window.location.href='productos.html'">Carrito</button>
+</p>
+</section>
+
 <body>
+    <header>
+        <h1>Catalogo Industrial</h1>
+    </header>
 
     <table class="tabla">
         <thead>
@@ -54,8 +92,13 @@
     </table>
 
 
-    <h1>Contacto </h1>
+
+    
+
+
+    
     <form action="#" method="post" class="contacto">
+        <h1>Contacto </h1>
         <p>
             <h4>Nombres</h4>
             <input type="text" name="Mensaje" placeholder="Rogelia" required>
@@ -85,11 +128,17 @@
     <p>Todos los derechos reservados &copy; 2021</p>
     <p>Contacto: <a href="mailto:rogelia@gmail.com">rogelia@gmail.com</a></p>
     <p>Teléfono: 555-555-5555</p>
-    <iframe>
+    <div>
         <h2>Mapa del sitio</h2>
-        <img src="./imagenes/Maps.jpg" width="600px">
-        <p>Dirección: Calle 123, Colonia XYZ, CP 12345</p>
+        <iframe 
+            src="https://maps.app.goo.gl/4N1EFb2kGt2sdtiu8" 
+            width="300" 
+            height="250" 
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy"></iframe>
+        <p>Dirección: Carrera 42 #48-20 Edificio Cesde, Medellín, Antioquia</p>
         <p>Horarios de atención: Lunes a Viernes de 9:00 a 18:00, Sábado y Domingo de 10:00 a 14:00</p>
-    </iframe>
+    </div>
 </footer>
 </html>
