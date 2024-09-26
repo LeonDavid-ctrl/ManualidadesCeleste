@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu container">
+            <a href="#" class="logo">M.C</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="./images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+              <ul>
+                <li><a href="./index.html"> Inicio</a></li>
+                <li><a href="./Servicios.html"> Servicios</a></li>
+                <li><a href="./productos.html"> Productos</a></li>
+                <li><a href="./carrito.html"> Carrito</a></li>
+                <li><a href="#Contacto"> contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+
+    </header>
+    <form method="post" action="#">
+        <p>
+            <h4>Nombre completo</h4>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+        </p>
+        <p>
+            <h4>Direccion</h4>
+            <input type="text" name="direccion" placeholder="Direccion" required>
+        </p>
+        <p>
+            <h4>Email</h4>
+            <input type="email" name="Correo" placeholder="E-mail" required>
+        </p>
+        <p>Elegir el metodo de pago:<input list="metodoPago" required></p>
+        <datalist id="metodoPago">
+            <option value="Bancolombia">
+            <option value="Banco de Bogota">
+            <option value="AVillas">
+            <option value="PayPal">
+        </datalist>
+        <p>
+            <h4>Numero de la tarjeta</h4>
+            <input type="text" name="numTarjeta" placeholder="****-****-****" required>
+        </p>
+        <p>
+            <h4>Numeros de confirmación</h4>
+            <input type="text" name="numConfirmacion" placeholder="***" required>
+        </p>
+
+        <p><input type="submit" value="Finalizar pago"></p>
+    </form>
+</body>
+</html>
