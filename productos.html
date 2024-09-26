@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <script>
+        // Función para añadir el producto al carrito
+        function addToCart(nombre, precio) {
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            carrito.push({ nombre: nombre, precio: precio});
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            alert(nombre + " añadido al carrito");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu container">
+            <a href="#" class="logo">M.C</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="./images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+              <ul>
+                <li><a href="./index.html"> Inicio</a></li>
+                <li><a href="./Servicios.html"> Servicios</a></li>
+                <li><a href="./productos.html"> Productos</a></li>
+                <li><a href="./carrito.html"> Carrito</a></li>
+                <li><a href="#Contacto"> contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+
+    </header>
+    <h2>Producto 1</h2>
+    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
+    <p>Descripcion</p>
+    <p>$10.00</p>
+    <button onclick="addToCart('Producto 1', 10.00)">Añadir al carrito</button>
+
+    <h2>Producto 2</h2>
+    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
+    <p>Descripcion</p>
+    <p>$15.00</p>
+    <button onclick="addToCart('Producto 2', 15.00)">Añadir al carrito</button>
+
+    <h2>Producto 3</h2>
+    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
+    <p>Descripcion</p>
+    <p>$20.00</p>
+    <button onclick="addToCart('Producto 3', 20.00)">Añadir al carrito</button>
+
+    <h2>Producto 4</h2>
+    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
+    <p>Descripcion</p>
+    <p>$25.00</p>
+    <button onclick="addToCart('Producto 4', 25.00)">Añadir al carrito</button>
+
+    <h2>Producto 5</h2>
+    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
+    <p>Descripcion</p>
+    <p>$30.00</p>
+    <button onclick="addToCart('Producto 5', 30.00)">Añadir al carrito</button>
+    
+    <section id="Contacto">
+        <footer>
+            <p>&copy; 2024 Mi sitio Web. Todos los derechos reservados</p>
+            <p>IG</p>
+            <p>Facebook</p>
+            <p>Contacto</p>
+        </footer>
+        </section>      
+</body>
+</html>
