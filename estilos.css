@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.6; /*Esta modifica el espaciado de las lineas de texto en el parrafo*/
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
@@ -18,7 +18,7 @@ header {
 .tabla {
     width: 100%;
     margin: 20px 0;
-    border-collapse: collapse;
+    border-collapse: collapse; /*Esta es para que las celdas de una tabla se junten*/
 }
 
 .tabla th, .tabla td {
@@ -37,8 +37,8 @@ button {
     color: white;
     border: none;
     padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
+    cursor: pointer; /*Esta hace que salga la manito en el mause*/
+    border-radius: 5px; /*Esta curva las esquinas de lo que sea*/
 }
 
 button:hover {
@@ -72,6 +72,6 @@ footer {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /*Esta es para quitar cualquier decoracion del texto. como la rayita de los links*/
     color: #ff6600;
 }
