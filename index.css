@@ -1,0 +1,23 @@
+h1{
+    color: brown;
+    font-size: 50%;
+}
+    marquee {
+        color: orange;
+        font-size: 50px;
+    }
+#primero{
+    background-color: lightgreen;
+}
+.navegador{
+    background-color: rgb(55, 138, 45);
+    font-size: medium;
+}
+.menu{
+    color: white;
+    background-color: greenyellow;
+    display:flex;
+}
+.menu li{
+    margin-right: 20px;
+}
