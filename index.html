@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="/Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="TitulosDeInicio">
+     <h1>Gimnasio of Zyzz</h1>
+    <p>Bienvenido a Gimnasio of Zyzz, aca podras mejorar tu cuerpo y liberar tu mente siempre que lo necesites
+        por que este Gimnasio se convertira en tu segundo hogar.
+    </p> </div>
+
+    <div id="Zyss">
+    <h2>¿Por que Gimnasio of Zyzz?</h2>
+    <h4>Pues en este gimnasio contamos con:</h4>
+    <p>
+        <h3>Cinema cardio</h3>
+        <p>Imagina un lugar donde puedes quemar calorías mientras disfrutas de tus películas favoritas, donde el cine se encuentra con el fitness para ofrecerte una experiencia única</p>
+        <h3>Tu gym al mejor precio</h3>
+        <p>Más de 300 maquinas de última tecnología en cada gimnasio, a un precio accesible</p>
+        <h3>Espacios amplios y modernos</h3>
+        <p>Contamos con amplias instalaciones con mas de 500 m2 equipadas con diseños de punta</p>
+        <h3>300 gimnasios y aumentando</h3>
+        <p>Tenemos sedes a nivel nacional e internacional en donde podrás entrenar sin complicaciones</p>
+        <h3>Eventos y clases Power Training</h3>
+        <p>Somos creadores de comunidad, por eso constantemente creamos eventos de entrenamiento conjuntos</p>
+        <h3>App Athletic</h3>
+        <p>Una APP pensada para ti, lleva el seguimiento de tu entrenamiento y encuentra rutinas diarias gratis, el gym al alcance de tu mano</p>
+    </p> </div>
+
+    <h2>Nuestros planes</h2>
+    <p>Nuestros planes es algo que te va a fascinar de este lugar puesto a que tenemos variadad de precios para ti los cuales se
+        pueden adecuar a tus necesidades
+    </p>
+    <ul>
+        <h1>Plan de entrenamiento easy mensual:</h1>
+        <h2>incluye:</h2>
+        <li>Entrenamiento de calistenia</li>
+        <li>Entrenamiento con maquinas</li>
+        <li>App Athletic: Rutinas de entrenamiento y más</li>
+        <li>Cinema Cardio</li>
+        <p>Este plan tiene un precio de 130,000 mensuales</p>
+    </ul>
+    <ul>
+        <h1>Plan de entrenamiento vip trimestral:</h1>
+        <h2>incluye:</h2>
+        <li>Entrenamiento de calistenia</li>
+        <li>Entrenamiento con maquinas</li>
+        <li>Entrenamiento de cardio</li>
+        <li>Entrenamiento de yoga</li>
+        <li>Clases de boxeo</li>
+        <li>Acceso a cualquiera de nuestras cedes en el pais</li>
+        <li>Acceso a los entrenadores en cualquier momento</li>
+        <p>Este plan tiene un precio de 420,000 trimestrales</p>
+    </ul>
+    <ul>
+        <h1>Plan de entrenamiento hyper vip anual:</h1>
+        <h2>incluye:</h2>
+        <li>Todo lo incluido en el plan mensual</li>
+        <li>Todo lo incluido en el plan trimestral</li>
+        <li>Acceso a cualquiera de nuestras cedes en el mundo</li>
+        <li>Clases ilimitadas</li>
+        <li>Acceso a bebidas y comidas con un limite de 180,000</li>
+        <li>Zona de spa</li>
+        <p>Este plan tiene un precio de 980,000 semestrales</p>
+    </ul>
+
+    <h1>Formulario para la renta </h1>
+    <h3>Si desea adquirir alguno de nuestros planes, porfavor ingresas sus documentos en el siguiente formulario y seleccionar el tipo de plan que desea adquirir.</h3>
+    <form action="/index2.html" method="post">
+        <p>
+            <h4>Nombre</h4>
+            <input type="text" name="Mensaje" placeholder="Rogelia" required>
+        </p>
+        <p>
+            <h4>Email</h4>
+            <input type="email" name="Correo" placeholder="Rogelia@gmail.com" required>
+        </p>
+        <p>
+            <h4>Ingrese una edad de 18 a 55 años</h4>
+            <input type="number" name="Edad" min="18" max="55" placeholder="18-55" required>
+        </p>
+
+        <p>
+            <h4>Numero telefonico</h4>
+            <input type="tel" name="Telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="3214567890" required>
+        </p>
+
+        <p>Elegir el Plan: <input list="listaPlanes"></p>
+<datalist id="listaPlanes" >
+  <option value="Mensual" >
+  <option value="Trimestral" >
+  <option value="Anual" >
+</datalist>
+        
+        <p><input type="submit" value="Mandar"></p>
+    </form>
+    <footer>
+        <p>Todos los derechos reservados a &copy; 2021 Gimnasio of Zyzz</p>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Política de Privacidad</a></li>
+                <li><a href="/index.html">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

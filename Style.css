@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+    background-color: rgb(177, 111, 240);
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(219, 157, 231);
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    background-color: rgb(216, 201, 230);
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+    background-position: 500px;
+    margin: 0 auto;
+}
+
+#TitulosDeInicio {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    background-color: rgb(193, 156, 228);
+}
+
+#Zyss  {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    background-color: rgb(189, 153, 226);
+    padding: center;
+    border-radius: 20px;
+    width: 600px;
+    text-align: center;
+    background-position: center;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(/IMAGES/Gimnasio.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
