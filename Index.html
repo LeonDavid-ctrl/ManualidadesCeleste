@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compañia Aerea</title>
+    <link rel="stylesheet" href="./Estilos.css">
+</head>
+<header>
+    <ul class="header">
+        <li><a href="./Index.html">Registrar</a></li>
+        <li><a href="./index2.html">Registros</a></li>
+    </ul>
+</header>
+<body>
+    <section class="formularios">
+        <form id="avionForm">
+            <h1>Ingresar Avion</h1>
+            <p><label for="codigoAvion">Código del Avión:</label>
+            <input type="text" id="codigoAvion" required></p>
+            
+            <p><label for="baseAvion">Base:</label>
+            <input type="text" id="baseAvion" required></p>
+            
+            <button type="submit">Agregar Avión</button>
+        </form>
+        <form id="pilotoForm">
+            <h1>Ingresar Piloto</h1>
+            <p><label for="codigoPiloto">Código del Piloto:</label>
+                <input type="text" id="codigoPiloto" required></p>
+            
+            <p><label for="nombrePiloto">Nombre:</label>
+                <input type="text" id="nombrePiloto" required></p>
+    
+            <p><label for="horasDeVuelo">Horas De Vuelo:</label>
+                <input type="number" id="horasDeVuelo" required></p>
+    
+            <p><label for="basePiloto">Base:</label>
+                <input type="text" id="basePiloto" required></p>
+            
+            <button type="submit">Agregar Piloto</button>
+        </form>
+        <form id="miembroForm">
+            <h1>Ingresar Miembro</h1>
+            <p><label for="codigoMiembros">Código del miembro:</label>
+                <input type="text" id="codigoMiembro" required></p>
+            
+            <p><label for="nombreMiembro">Nombre:</label>
+                <input type="text" id="nombreMiembro" required></p>
+    
+            <p><label for="baseMiembro">Base:</label>
+                <input type="text" id="baseMiembro" required></p> 
+            
+            <button type="submit">Agregar Miembro</button>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById('avionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const codigoAvion = document.getElementById('codigoAvion').value;
+            const baseAvion = document.getElementById('baseAvion').value;
+
+            const aviones = JSON.parse(localStorage.getItem('aviones')) || [];
+            aviones.push({ codigoAvion, baseAvion });
+            localStorage.setItem('aviones', JSON.stringify(aviones));
+
+            this.reset(); 
+        });
+
+        document.getElementById('pilotoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const codigoPiloto = document.getElementById('codigoPiloto').value;
+            const nombrePiloto = document.getElementById('nombrePiloto').value;
+            const horasDeVuelo = document.getElementById('horasDeVuelo').value;
+            const basePiloto = document.getElementById('basePiloto').value;
+
+            const pilotos = JSON.parse(localStorage.getItem('pilotos')) || [];
+            pilotos.push({ codigoPiloto, nombrePiloto, horasDeVuelo, basePiloto });
+            localStorage.setItem('pilotos', JSON.stringify(pilotos));
+
+            this.reset(); 
+        });
+
+        document.getElementById('miembroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const codigoMiembro = document.getElementById('codigoMiembro').value;
+            const nombreMiembro = document.getElementById('nombreMiembro').value;
+            const baseMiembro = document.getElementById('baseMiembro').value;
+
+            const miembros = JSON.parse(localStorage.getItem('miembros')) || [];
+            miembros.push({ codigoMiembro, nombreMiembro, baseMiembro });
+            localStorage.setItem('miembros', JSON.stringify(miembros));
+
+            this.reset(); 
+        });
+    </script>
+</body>
+<footer>
+    <p>© 2021 Compañia Aerea. Todos los derechos reservados.</p>
+    <ul class="social-media">
+        <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
+        <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+    </ul>
+    <p>Email: support@example.com</p>
+</footer>
+</html>
