@@ -1,0 +1,139 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: whitesmoke;
+  }
+  h2 {
+    color: #003366;
+  }
+  
+  header {
+    background: #003366;
+    color: #fff;
+    display: flex; /* Alinea logo y título en una línea */
+    align-items: center; /* Centra verticalmente el logo y el título */
+  }
+  
+  .header-content {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center; /* Centra verticalmente el logo y el título */
+    margin-left: 20px; /* Ajusta el margen izquierdo según sea necesario */
+  }
+  
+  .logo {
+    height: 80px;
+    margin-right: 20px; /* Espacio entre el logo y el título */
+  }
+  
+/* Estilos generales del menú */
+.menu {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: right; /* Alinea el texto a la derecha */
+    margin-right: 20px; /* Espacio entre el logo y el menú */
+  }
+  
+  .menu ul {
+    list-style: none; /* Elimina los marcadores de lista */
+  }
+  
+  .menu li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+    margin-left: 20px; /* Espacio entre los elementos del menú */
+  }
+  
+  .menu a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: whitesmoke; /* Color del texto de los enlaces */
+  }
+  
+  /* Main */
+  main {
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  form input[type="text"], 
+  form input[type="number"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #002244;
+  }
+  
+  /* Flight Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, 
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #003366;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+.box5{
+  text-align: center;
+}

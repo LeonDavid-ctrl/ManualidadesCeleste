@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compañía Aérea Ciro</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <header>
+    <div class="header-content">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1>AirData Ciro</h1>
+      </div>
+      <div class="menu">
+    <nav>
+      <ul >
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index2.html">Sobre nosotros</a></li>
+        <li><a href="index3.html">Contacto</a></li>
+      </ul>
+    </nav></div>
+  </header>
+  <body>
+    <main>
+      <section id="Inicio">
+      <div class="container">
+        <div class="box box1">
+          <h2>Registro de Pilotos</h2>
+          <form id="pilotoForm">
+            <label for="codigoPiloto">Código del Piloto:</label>
+            <input type="text" id="codigoPiloto" name="codigoPiloto" required><br><br>
+            <label for="nombrePiloto">Nombre del Piloto:</label>
+            <input type="text" id="nombrePiloto" name="nombrePiloto" required><br><br>
+            <label for="horasVuelo">Horas de Vuelo:</label>
+            <input type="number" id="horasVuelo" name="horasVuelo" required><br><br>
+            <input type="submit" value="Guardar Piloto">
+          </form>
+        </div>
+        <div class="box box2">
+          <h2>Registro de Miembros de Tripulación</h2>
+          <form id="miembroForm">
+            <label for="codigoMiembro">Código del Miembro:</label>
+            <input type="text" id="codigoMiembro" name="codigoMiembro" required><br><br>
+            <label for="nombreMiembro">Nombre del Miembro:</label>
+            <input type="text" id="nombreMiembro" name="nombreMiembro" required><br><br>
+            <input type="submit" value="Guardar Miembro">
+          </form>
+        </div>
+        <div class="box box3">
+          <h2>Registro de Aviones</h2>
+          <form id="avionForm">
+            <label for="codigoAvion">Código del Avión:</label>
+            <input type="text" id="codigoAvion" name="codigoAvion" required><br><br>
+            <label for="tipoAvion">Tipo de Avión:</label>
+            <input type="text" id="tipoAvion" name="tipoAvion" placeholder="Ejemplo: BOEING-747" required><br><br>
+            <label for="baseAvion">Base del Avión:</label>
+            <input type="text" id="baseAvion" name="baseAvion" required><br><br>
+            <input type="submit" value="Guardar Avión">
+          </form>
+        </div>
+      </div>
+    </section>
+      <p></p>
+
+        <h2>Vuelos</h2>
+        <div class="busquedaVuelo">
+          <label for="busquedaVuelo">Buscar vuelo:</label>
+          <input type="text" id="busquedaVuelo" placeholder="Número de vuelo" >
+          <button onclick="buscarVuelo()">Buscar</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Número de vuelo</th>
+              <th>Origen</th>
+              <th>Destino</th>
+              <th>Hora</th>
+              <th>Avión</th>
+              <th>Piloto</th>
+              <th>Miembros de tripulación</th>
+            </tr>
+          </thead>
+          <tbody>
+            <td> AV3550</td>
+            <td>Madrid</td>
+            <td>París</td>
+            <td>10:00</td>
+            <td>Airbus A320</td>
+            <td>P123</td>
+            <td>T678, T345</td>
+          </tbody>
+          <tbody>
+            <td>IB-8830</td>
+            <td>Palma</td>
+            <td>Alicante</td>
+            <td>13:50</td>
+            <td>AV001</td>
+            <td>P001</td>
+            <td>T001, T002</td>
+          </tbody>
+          <tbody>
+            <td>AV6789</td>
+            <td>Madrid</td>
+            <td>Barcelona</td>
+            <td>15:00</td>
+            <td>Boeing-747</td>
+            <td>P005</td>
+            <td>T078, T008, T906</td>
+          </tbody>
+          <tbody>
+            <td>IB-8831</td>
+            <td>London</td>
+            <td>París</td>
+            <td>14:05</td>
+            <td>Airbus A320</td>
+            <td>P153</td>
+            <td>T285, T913</td>
+          </tbody>
+        </table>
+    </main>
+    <footer>
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">AirData Ciro</span> by <span property="cc:attributionName">Ciro</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+</body>
+
+</html>

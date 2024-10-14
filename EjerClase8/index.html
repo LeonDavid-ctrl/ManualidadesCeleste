@@ -1,0 +1,99 @@
+<!-- Problema: Una empresa de consultoría necesita una página web que muestre sus servicios y permita a los clientes 
+ solicitar cotizaciones personalizadas. Ejercicio:
+
+Página de servicios: Crea una página HTML5 que incluya una descripción de los servicios de consultoría en diferentes 
+secciones (<section>). Cada servicio debe estar dentro de un artículo (<article>) con un título (<h2>), una descripción 
+(<p>), y un enlace (<a>) para obtener más información.
+Formulario de cotización: Crea un formulario donde los clientes puedan solicitar una cotización personalizada. 
+El formulario debe incluir:
+Campos de texto para el nombre, la empresa y el correo electrónico.
+Un menú desplegable para seleccionar el tipo de servicio de consultoría.
+Un área de texto para que el cliente describa su proyecto.
+Un botón de envío (<button>)-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria Ciro</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <h1>Consultoria Ciro</h1>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="#asesoramiento">Asesoramiento Estrategico</a></li>
+                <li><a href="#diagnostico">Diagnostico de Problemas e Implementacion de Solucines</a></li>
+                <li><a href="#optimizacion">Optimizacion de Procesos</a></li>
+                <li><a href="#cotizacion">Cotizacion Personalizadas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="asesoramiento" class="service-section">
+    <section id="asesoramiento">
+        <h2>Asesoramiento Estrategico</h2>
+        <img src="./asesoramiento.jpg" alt="Asesoramiento Estrategico" class="imagenasesoramiento">
+        <p>Nos complace presentarte nuestro servicio de Asesoramiento Estratégico, diseñado para ayudarte a alcanzar tus objetivos empresariales y llevar tu negocio al siguiente nivel. 
+            Nuestro enfoque integral incluye: Análisis y Diagnóstico, Definición de Objetivos, Establecimiento de Metas Y Desarrollo de Estrategias
+            Nuestro objetivo es proporcionarte una hoja de ruta clara y efectiva que permita a tu empresa mejorar su competitividad, optimizar sus operaciones y alcanzar un crecimiento sostenible.
+            
+            ¿Estás listo para llevar tu negocio al siguiente nivel? ¡Contáctanos hoy mismo para comenzar!</p>
+        <a href="www.consultoriaciro.com">Obten mas informacion Aqui</a>
+    </section></div>
+
+    <div id="diagnostico" class="service-section">
+    <section id="diagnostico">
+        <h2>Diagnostico de Problemas e Implementacion de Soluciones</h2>
+        <img src="./diagnostico.jpg" alt="Diagnostico de Problemas e Implementacion de Soluciones" class="imagenadiagnostico">
+        <p>Nuestro Diagnostico de Problemas y Implementacion de Soluciones es un proceso de análisis de riesgos y evaluación de posibles problemas en tu negocio.
+            Utilizamos técnicas de análisis y evaluación, como el Método de Riesgos y el Método de Crisis, para identificar y resolver los problemas más importantes.
+            Nuestro objetivo es proporcionarte un diagnóstico preciso y una estrategia efectiva para resolver tus problemas.
+            
+            ¿Estás listo para comenzar tu Diagnostico de Problemas y Implementacion de Soluciones? ¡Contáctanos hoy mismo para comenzar!</p>
+            <a href="www.consultoriaciro.com">Obten mas informacion Aqui</a>
+    </section></div>
+
+    <div id="optimizacion" class="service-section">
+    <section id="optimizacion">
+        <h2>Optimizacion de Procesos</h2>
+        <img src="./optimizacion.jpg" alt="Optimizacion de Procesos" class="imagenaoptimizacion" >
+        <p>Nuestro Proceso de Optimización de Procesos es un proceso de diseño y ejecución de estrategias para mejorar la eficiencia y productividad de tu negocio.
+            Utilizamos técnicas de optimización como el Método de Análisis de Costos y el Método de Análisis de Requisitos, para identificar y resolver los problemas más importantes.
+            Nuestro objetivo es proporcionarte un plan de acción efectivo para optimizar tus procesos.
+            
+            ¿Estás listo para comenzar tu Proceso de Optimización de Procesos? ¡Contáctanos hoy mismo para comenzar!</p>
+        <a href="www.consultoriaciro.com">Obten mas informacion Aqui</a>
+    </section></div>
+<section id="cotizacion">
+    <h2>Cotización Personalizadas</h2>
+    <form action="" method="POST" class="formulario">
+        <p>Nombre Completo <input type="text" name="nombre" required></p>
+        <p>Empresa <input type="text" name="empresa" required></p>
+        <p>Correo Electrónico <input type="email" name="coreo"placeholder="nombre@dominio.com" required></p>
+        <p>Servicio a cotizar :<input list="servicios"></p>
+             <datalist id="servicios" >
+            <option value="Asesoramiento Estrategico" >
+            <option value="Diagnostico de Problemas e Implementacion de Solucines" >
+            <option value="Optimizacion de Procesos" >
+             </datalist>
+        <p>Descripcion adicional del proyecto <input type="text" name="mensaje" size="300" minlength="30"></p>    
+        <p><input type="submit" value="Enviar"></p>
+         </form> 
+</section>
+<footer class="footer">
+    <p><a href="politica-de-privacidad.html">Politica de Privacidad</a></p>
+    <p><a href="terminos-y-condiciones.html">Terminos y Condiciones</a></p>
+    <p><a href="contacto.html">Contacto</a></p>
+    <p><a href="https://www.facebook.com/ConsultoriaCiro/">Facebook</a></p>
+    <p><a href="https://www.instagram.com/consultoriaciro/">Instagram</a></p>
+    <p><a href="https://www.twitter.com/ConsultoriaCiro/">Twitter</a></p>
+    <p><a href="https://www.linkedin.com/company/consultoriaciro/">LinkedIn</a>
+    <p>Consultoria Ciro &copy; 2024</p>
+</footer>
+
+</body>
+</html>
