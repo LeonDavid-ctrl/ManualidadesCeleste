@@ -1,0 +1,152 @@
+body {
+    background-image: url(./images/fondo#2.jpg);
+    background-color: #1f1f1f;
+    font-family:  'Times New Roman', Times, serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(36, 233, 95);
+}
+
+/* Header y navegación con fondo transparente */
+header {
+    position: relative;
+    background: rgba(0, 0, 0, 0.3); /* Fondo negro con opacidad */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Opcional, para un pequeño sombreado */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 26px;
+    color: rgb(93, 174, 13);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: rgb(36, 233, 95);
+}
+
+/* Galería de productos */
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.product {
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+.product .price {
+    font-size: 16px;
+    color: #ffd700;
+    margin: 10px 0;
+}
+
+.product button {
+    background-color: #007826;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #005510;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}

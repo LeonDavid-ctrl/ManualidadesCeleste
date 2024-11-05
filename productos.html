@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
+    <link rel="stylesheet" href="produc.css">
     <script>
         // Función para añadir el producto al carrito
         function addToCart(nombre, precio) {
             let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-            carrito.push({ nombre: nombre, precio: precio});
+            carrito.push({ nombre: nombre, precio: precio });
             localStorage.setItem('carrito', JSON.stringify(carrito));
             alert(nombre + " añadido al carrito");
         }
@@ -18,59 +19,94 @@
     <header>
         <div class="menu container">
             <a href="#" class="logo">M.C</a>
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <img src="./images/menu.png" class="menu-icono" alt="">
-            </label>
+          
             <nav class="navbar">
-              <ul>
-                <li><a href="./index.html"> Inicio</a></li>
-                <li><a href="./Servicios.html"> Servicios</a></li>
-                <li><a href="./productos.html"> Productos</a></li>
-                <li><a href="./carrito.html"> Carrito</a></li>
-                <li><a href="#Contacto"> contacto</a></li>
-              </ul>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./Servicios.html">Servicios</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./carrito.html">Carrito</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
             </nav>
-          </div>
-
+        </div>
     </header>
-    <h2>Producto 1</h2>
-    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
-    <p>Descripcion</p>
-    <p>$10.00</p>
-    <button onclick="addToCart('Producto 1', 10.00)">Añadir al carrito</button>
 
-    <h2>Producto 2</h2>
-    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
-    <p>Descripcion</p>
-    <p>$15.00</p>
-    <button onclick="addToCart('Producto 2', 15.00)">Añadir al carrito</button>
+    <section class="product-gallery">
+        <section class="product-gallery">
+            <article class="product">
+                <h2>Orquídeas</h2>
+                <img src="./images/orquideas.jpg" alt="Orquídeas" width="300">
+                <p>Las orquídeas son plantas tropicales conocidas por sus flores exóticas. Son una opción perfecta para embellecer tu hogar.</p>
+                <p class="price">40.000</p>
+                <button onclick="addToCart('Orquídeas', 40.000)">Añadir al carrito</button>
+            </article>
+        
+            <article class="product">
+                <h2>Tulipanes</h2>
+                <img src="./images/Tulipanes.jpg" alt="Tulipanes" width="300">
+                <p>El tulipán es una planta bulbosa que destaca por sus colores vibrantes. Ideal para cualquier ocasión.</p>
+                <p class="price">20.000</p>
+                <button onclick="addToCart('Tulipanes', 20.000)">Añadir al carrito</button>
+            </article>
+        
+            <article class="product">
+                <h2>Claveles</h2>
+                <img src="./images/Claveles.jpg" alt="Claveles" width="300">
+                <p>Los claveles son flores populares que simbolizan amor y admiración. Perfectos para regalar o decorar.</p>
+                <p class="price">30.000</p>
+                <button onclick="addToCart('Claveles', 30.000)">Añadir al carrito</button>
+            </article>
+        
+            <article class="product">
+                <h2>Mini Cactus</h2>
+                <img src="./images/Mini Catus.jpg" alt="Mini Cactus" width="300">
+                <p>Los cactus pequeños son fáciles de cuidar y perfectos para espacios pequeños o como regalo.</p>
+                <p class="price">$15.000</p>
+                <button onclick="addToCart('Mini Cactus', 15.000)">Añadir al carrito</button>
+            </article>
+        
+            <article class="product">
+                <h2>Bonsai</h2>
+                <img src="./images/Bonsai.jpg" alt="Bonsai" width="300">
+                <p>El bonsai es una planta pequeña con gran simbolismo. Ideal para crear un ambiente tranquilo y elegante.</p>
+                <p class="price">200.000</p>
+                <button onclick="addToCart('Bonsai', 200.000)">Añadir al carrito</button>
+            </article>    
+        
+            <article class="product">
+                <h2>Pino Azul</h2>
+                <img src="./images/pino azul.jpg" alt="Pino Azul" width="300">
+                <p>El Pino Azul es una variedad de conífera conocida por su hermoso follaje de tonalidades azuladas. Ideal para jardines o como planta decorativa.</p>
+                <p class="price">70.000</p>
+                <button onclick="addToCart('Pino Azul', 70.000)">Añadir al carrito</button>
+            </article>
+        
+            <article class="product">
+                <h2>Livistona</h2>
+                <img src="./images/Livistona.jpg" alt="Livistona" width="300">
+                <p>La Livistona es una palma que se caracteriza por sus grandes hojas en forma de abanico. Perfecta para interiores espaciosos.</p>
+                <p class="price">50.000</p>
+                <button onclick="addToCart('Livistona', 50.000)">Añadir al carrito</button>
+            </article>
+        
+            <article class="product">
+                <h2>Alocasia</h2>
+                <img src="./images/Alocasia.jpg" alt="Alocasia" width="300">
+                <p>La Alocasia es una planta de hojas grandes y vistosas que aportan un toque tropical y exótico a cualquier espacio.</p>
+                <p class="price">62.000</p>
+                <button onclick="addToCart('Alocasia', 62.000)">Añadir al carrito</button>
+            </article>
+        </section>
+    </section>
 
-    <h2>Producto 3</h2>
-    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
-    <p>Descripcion</p>
-    <p>$20.00</p>
-    <button onclick="addToCart('Producto 3', 20.00)">Añadir al carrito</button>
-
-    <h2>Producto 4</h2>
-    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
-    <p>Descripcion</p>
-    <p>$25.00</p>
-    <button onclick="addToCart('Producto 4', 25.00)">Añadir al carrito</button>
-
-    <h2>Producto 5</h2>
-    <img src="./imegensobremi.jpeg" alt="Descripcion de la imagen" width="300">
-    <p>Descripcion</p>
-    <p>$30.00</p>
-    <button onclick="addToCart('Producto 5', 30.00)">Añadir al carrito</button>
-    
     <section id="Contacto">
         <footer>
             <p>&copy; 2024 Mi sitio Web. Todos los derechos reservados</p>
-            <p>IG</p>
-            <p>Facebook</p>
-            <p>Contacto</p>
+            <p><a href="https://instagram.com" target="_blank">Instagram</a></p>
+            <p><a href="https://facebook.com" target="_blank">Facebook</a></p>
+            <p><a href="mailto:contacto@example.com">Contacto</a></p>
         </footer>
-        </section>      
+    </section>
 </body>
 </html>
