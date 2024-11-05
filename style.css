@@ -13,11 +13,6 @@ body {
     background-color: #1f1f1f;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .header {
     background-image: url(images/big.jpeg);
     background-position: center top;
