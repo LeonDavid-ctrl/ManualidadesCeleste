@@ -489,3 +489,14 @@ body {
 .header {
     background-image: url(images/big.jpeg);
 }
+
+
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
