@@ -512,3 +512,7 @@ img {
     animation-range: entry 25% cover 30%;
     animation-fill-mode: both;
 }
+
+.Personal-group{
+    animation: show;
+}

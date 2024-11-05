@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
-</head>
+    <title>Servicios - Manualidades Celeste</title>
+    <link rel="stylesheet" href="./style.css"> </head>
 <body>
-    <header>
+
+    <header class="header">
         <div class="menu container">
             <a href="#" class="logo">M.C</a>
             <input type="checkbox" id="menu">
@@ -14,17 +15,98 @@
                 <img src="./images/menu.png" class="menu-icono" alt="">
             </label>
             <nav class="navbar">
-              <ul>
-                <li><a href="./index.html"> Inicio</a></li>
-                <li><a href="./Servicios.html"> Servicios</a></li>
-                <li><a href="./productos.html"> Productos</a></li>
-                <li><a href="./carrito.html"> Carrito</a></li>
-                <li><a href="#Contacto"> contacto</a></li>
-              </ul>
+                <ul>
+                    <li><a href="./index.html"> Inicio</a></li>
+                    <li><a href="./Servicios.html"> Servicios</a></li>
+                    <li><a href="./productos.html"> Productos</a></li>
+                    <li><a href="./carrito.html"> Carrito</a></li>
+                    <li><a href="#Contacto"> contacto</a></li>
+                </ul>
             </nav>
-          </div>
-
+        </div>
+        <div class="header-content container">
+          <div class="header-txt">
+              <h1>Manu Celeste</h1>
+              <span>Santa Elena</span>
+              <p>
+                  Gracias por visitar Manualidades Celeste. ¡Esperamos que disfrutes de tu experiencia con nosotros y encuentres esa pieza especial que hará florecer tu vida!
+              </p>
+          </div> 
     </header>
     
+
+    <main class="services container">
+      
+        <div class="services-txt">
+            <h2>Nuestros servicios</h2>
+            <hr>
+            <p>
+                En Manualidades Celeste, no solo nos dedicamos a ofrecerte una maravillosa selección de plantas, bonsáis y terrarios, sino que también nos enorgullece brindar una gama de servicios diseñados para ayudarte a disfrutar al máximo de tu experiencia verde. Descubre cómo podemos asistirte:
+            </p>
+        </div>
+        <div class="Personal-group">
+          <div class="Personal-1">
+           <img src="./images/domicilio.jpg" alt="">
+           <h3>Domicilio</h3>
+          </div>
+          <div class="Personal-1">
+             <img src="./images/mantenimiento.jpg" alt="">
+             <h3>Mantenimiento</h3>
+            </div>
+            <div class="Personal-1">
+             <img src="./images/taller.jpg" alt="">
+             <h3>Cursos y Talleres</h3>
+            </div>
+         </div>
+        <div class="services-group">
+            <div class="services-1">
+                <img src="./images/i1.svg" alt="Icono de domicilio">
+                <h3>Domicilio</h3>
+                <p>Para tu comodidad, ofrecemos entregas a domicilio para que puedas recibir tus plantas sin tener que salir de casa.</p>
+                <a href="#Contacto">Cotiza aqui</a>
+            </div>
+
+            <div class="services-1">
+                <img src="./images/i2.svg" alt="Icono de mantenimiento">
+                <h3>Mantenimiento</h3>
+                <p>Entendemos que el mantenimiento de las plantas puede ser un desafío, por eso ofrecemos servicios de cuidado y mantenimiento para asegurar que tus plantas y terrarios se mantengan saludables y vibrantes.</p>
+                <a href="#Contacto">Cotiza aqui</a>
+            </div>
+
+            <div class="services-1">
+                <img src="./images/i3.svg" alt="Icono de cursos">
+                <h3>Cursos y Talleres</h3>
+                <p>Aprende y crece con nosotros a través de nuestros talleres y cursos, donde te enseñaremos todo lo necesario para cuidar tus plantas como un experto.</p>
+                <a href="#Contacto">Cotiza aqui</a>
+            </div>
+        </div>
+  
+    </main>
+
+    <footer id="Contacto">
+        <div class="footer-bg">
+            <h2>Reserva un producto o domicilio</h2>
+            <form>
+                <div class="campo-1">
+                    <input class="campo" type="text" placeholder="Nombre">
+                    <input class="campo" type="number" placeholder="Celular">
+                </div>
+                <div class="campo-1">
+                    <input class="campo" type="text" placeholder="Direccion">
+                    <input class="campo" type="email" placeholder="Correo">
+                </div>
+                <textarea class="campo" id="" cols="30" rows="10" placeholder="Texto"></textarea>
+                <input type="submit" value="Enviar" class="btn-1">
+            </form>
+        </div>
+        <div class="footer-txt">
+            <p>
+                Manualidades Celeste - Tu espacio para la creatividad y la inspiración. ¡Esperamos verte pronto!
+
+                © 2024 Manualidades Celeste. Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
